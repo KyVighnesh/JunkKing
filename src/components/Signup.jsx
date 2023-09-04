@@ -27,7 +27,7 @@ const Signup = () => {
   const[quantity,setQuantity] = useState(true)
 
   const getMenu = () => {
-    axios.get("http://localhost:8090/getMenu").then(data => {
+    axios.get("https://junk-king.onrender.com/getMenu").then(data => {
       console.log(data.data.menu)
       
 
@@ -79,7 +79,7 @@ const onHandleClick = () => {
 
     console.log(user)
 
-    axios.post("http://localhost:8090/signup",user).then(data=> {
+    axios.post("https://junk-king.onrender.com/signup",user).then(data=> {
         console.log(data)
 
         if(data) {

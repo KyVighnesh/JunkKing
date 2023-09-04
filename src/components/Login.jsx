@@ -44,7 +44,7 @@ const onHandleClick = () => {
     console.log(user)
 
 
-    axios.post("http://localhost:8090/logIn",user).then(data=> {
+    axios.post("https://junk-king.onrender.com/logIn",user).then(data=> {
         console.log(data)
 
         if(data) {

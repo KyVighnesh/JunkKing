@@ -16,10 +16,13 @@ import './cart.css'
 const Cart = () => {
 
     const[data,getData] = useState(true)
+    const[totalAmount,setTotalAmount] = useState(true)
 
     const[increment,setIncrement] = useState(true)
 
     const[cart,setCart] = useState([])
+
+    const[product,setProduct] = useState()
 
     const[total,setTotal] = useState(0)
 
@@ -30,20 +33,24 @@ const Cart = () => {
 
 
     const fetchCart = () =>{
-        axios.post("http://localhost:8090/user",{email:localStorage.getItem("email")}).then(data => {
+        axios.post("https://junk-king.onrender.com/user",{email:localStorage.getItem("email")}).then(data => {
             console.log(data.data.currentUser.cart)
             setCart(data.data.currentUser.cart)
-
+            setProduct(data.data.currentUser.products)
             getData(!data)
+
+            console.log(product)
             
         })
     }
 
     const sentTotal = () => {
-      axios.put(`http://localhost:8090/${localStorage.getItem("email")}`,{total:total}).then(data=> {
-        axios.post("http://localhost:8090/getTotal",{email:localStorage.getItem("email")}).then(res=> {
+
+
+      axios.put(`https://junk-king.onrender.com/${localStorage.getItem("email")}`,{total:total,cart:cart}).then(data=> {
+        axios.post("https://junk-king.onrender.com",{email:localStorage.getItem("email")}).then(res=> {
           console.log(res)
-          window.location = "http://localhost:8090/buy"
+          window.location = "https://junk-king.onrender.com/buy"
         })
       })
     }
@@ -65,6 +72,9 @@ const Cart = () => {
         fetchCart()
         findSum()
     },[data])
+
+
+    
 
     useEffect(()=> {
       findSum()
@@ -93,6 +103,22 @@ const Cart = () => {
 
       }
 
+
+      product.find((ele)=> {
+        if(ele.id == clicked.id) {
+          ele.quantity = ele.quantity + 1
+
+          console.log(product)
+        }
+      })
+
+      axios.put(`https://junk-king.onrender.com/${localStorage.getItem("email")}`,{products:product}).then(data=> {
+        console.log(data)
+        
+      })
+
+      setTotalAmount(!totalAmount)
+
     }
 
 
@@ -118,7 +144,25 @@ const Cart = () => {
         else {
           setCart([...filter,clicked])
 
-        }        
+        }  
+        
+        
+        product.find((ele)=> {
+          if(ele.id == clicked.id) {
+            ele.quantity = ele.quantity - 1
+  
+            console.log(product)
+          }
+        })
+
+
+        axios.put(`https://junk-king.onrender.com/${localStorage.getItem("email")}`,{products:product}).then(data=> {
+        console.log(data)
+        
+      })
+
+      setDecrement(!decrement)
+  
 
         console.log(cart)
 

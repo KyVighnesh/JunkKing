@@ -30,11 +30,11 @@ const Products = () => {
 
 
     const checkOut = () => {
-      axios.put(`http://localhost:8090/${localStorage.getItem("email")}`,{cart:cart}).then(data=> {
+      axios.put(`https://junk-king.onrender.com/${localStorage.getItem("email")}`,{cart:cart}).then(data=> {
         navigate('/cart')
       })
 
-      axios.put(`http://localhost:8090/${localStorage.getItem("email")}`,{products:products}).then(data=> {
+      axios.put(`https://junk-king.onrender.com/${localStorage.getItem("email")}`,{products:products}).then(data=> {
         console.log(data)
         
       })
@@ -42,7 +42,7 @@ const Products = () => {
 
 
     const fetchUser = () => {
-        axios.post("http://localhost:8090/user",{email:localStorage.getItem("email")}).then(data=> {
+        axios.post("https://junk-king.onrender.com/user",{email:localStorage.getItem("email")}).then(data=> {
 
        
 
