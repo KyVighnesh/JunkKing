@@ -106,16 +106,21 @@ else if(regexEmail.test(user.email) == false || regexPassword.test(user.password
 
             <h4> Junk King</h4>
         <InputGroup className="mb-3">
+
         <Form.Control
           placeholder="Email"
           aria-label="Email"
           aria-describedby="basic-addon1"
           onChange={handleChange}
           name = "email"
+        
         />
-                <h5  style={{color:"red"}}>{emailError}</h5>
+        
+       
+                
 
       </InputGroup>
+      <h5  style={{color:"black"}}>{emailError}</h5>
 
       <InputGroup className="mb-3">
         <Form.Control
@@ -126,8 +131,10 @@ else if(regexEmail.test(user.email) == false || regexPassword.test(user.password
           name = "password"
         />
 
-        <h5 style={{color:"red"}}>{passwordError}</h5>
+        <h5 style={{color:"black",marginTop:"20px"}}>{passwordError}</h5>
       </InputGroup>
+
+
 
       <Button variant="dark" onClick={onHandleClick}>Log in</Button>{' '}
 
