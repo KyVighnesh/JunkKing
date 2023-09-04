@@ -14,7 +14,7 @@
     
 
     #buttonCell {
-        width: 100px;
+        width: 100%;
     }
 
     .cell {
@@ -40,6 +40,7 @@
         overflow: hidden;
         height: 500px;
     }
+    
     
 
 
