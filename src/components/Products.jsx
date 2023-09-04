@@ -203,7 +203,7 @@ const Products = () => {
       <Card.Body>
         <Card.Title>{ele.dsc}</Card.Title>
         <Card.Text>
-          {`${ele.price} $`}
+        {`$ ${ele.price} `}
         </Card.Text>
         <div style={{display:'flex',justifyContent:"space-around",alignItems:"center"}}>
         <Button variant="dark" style={{width:"60px"}} onClick = {()=> {
@@ -237,7 +237,7 @@ const Products = () => {
       <Card.Body>
         <Card.Title>{ele.dsc}</Card.Title>
         <Card.Text>
-          {`${ele.price} $`}
+        {`$ ${ele.price} `}
         </Card.Text>
         <div style={{display:'flex',justifyContent:"space-around",alignItems:"center"}}>
         <Button variant="dark" style={{width:"60px"}} onClick = {()=> {
@@ -271,7 +271,7 @@ const Products = () => {
       <Card.Body>
         <Card.Title>{ele.dsc}</Card.Title>
         <Card.Text>
-          {`${ele.price} $`}
+          {`$ ${ele.price} `}
         </Card.Text>
         <div style={{display:'flex',justifyContent:"space-around",alignItems:"center"}}>
         <Button variant="dark" style={{width:"60px"}} onClick = {()=> {
