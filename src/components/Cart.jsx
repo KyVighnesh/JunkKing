@@ -48,7 +48,7 @@ const Cart = () => {
 
 
       axios.put(`https://junk-king.onrender.com/${localStorage.getItem("email")}`,{total:total,cart:cart}).then(data=> {
-        axios.post("https://junk-king.onrender.com",{email:localStorage.getItem("email")}).then(res=> {
+        axios.post("https://junk-king.onrender.com/user",{email:localStorage.getItem("email")}).then(res=> {
           console.log(res)
           window.location = "https://junk-king.onrender.com/buy"
         })
