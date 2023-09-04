@@ -6,7 +6,7 @@
 
 @media only screen and (min-width:320px) and (max-width:600px) {
     .table {
-        width: 330px;
+        width: 500pxpx;
         overflow: none;
         height: 100%;
     }
@@ -33,6 +33,7 @@
     #tableContainer {
         height: 600px;
         overflow: hidden;
+        width: 100%;
     }
 
     .table {
@@ -43,5 +44,7 @@
 
 
 }
+
+
 
 
