@@ -1,0 +1,140 @@
+.categories {
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    
+}
+
+body {
+    background-image: url("https://th.bing.com/th/id/OIP.KNjcn847lnwGFl_ay8_v8wHaNK?pid=ImgDet&rs=1");
+
+}
+
+h2 {
+    color: white;
+}
+
+.leftover {
+    margin-top: 240px;
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+    .headerText {
+        font-size: 15px;
+    }
+
+    #user {
+        font-size: 10px;
+        position: relative;
+        left: 10px;
+    }
+
+    .categories {
+
+        display: block;
+
+
+    }
+
+    
+
+    .menuCard {
+        margin-top: 30px;
+    }
+
+
+
+    #burgers {
+        height: 2450px;
+        width: 78%;
+        margin: auto;
+    }
+
+    .leftover {
+        height: 2400px;
+        margin-top: -0.5px;
+        width: 78%;
+        margin: auto;
+
+    }
+
+    #bodyDiv {
+        overflow: hidden;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+
+    #burgers {
+        width: 50%;
+    }
+
+    .leftover {
+        width: 50%;
+
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+
+
+    body {
+        background-size: 100%;
+        background-position: cover;
+    }
+    
+
+    #pizza {
+        position: relative;
+        top: 20px;
+    }
+
+    .categories {
+
+        flex-wrap: wrap;
+
+
+    }
+
+    #burgers {
+
+        height: 1000px;
+
+    }
+
+    .menuCard {
+        margin-top: 30px;
+    }
+
+    .leftover {
+        height: 1000px;
+    }
+
+    #bodyDiv {
+        overflow: hidden;
+        text-align: center;
+        height: 4000px;
+    }
+
+    
+}
+
+@media only screen and (min-width:1024px) and (max-width:1200px) {
+
+    #bodyDiv {
+        overflow: hidden;
+        text-align: center;
+        height: 3700px;
+    }
+
+    .categories {
+        justify-content: space-between;
+    }
+
+}

@@ -1,0 +1,34 @@
+#main {
+    background-image: url("https://th.bing.com/th/id/OIP.KNjcn847lnwGFl_ay8_v8wHaNK?pid=ImgDet&rs=1");
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#inputData {
+    background-color: orange;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mb-3 {
+    width:300px;
+    border-radius: 10px;
+}
+
+Button {
+    width: 120px;
+}
+
+h4 {
+    position: relative;
+    bottom: 20px;
+}

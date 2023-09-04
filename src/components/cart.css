@@ -1,0 +1,47 @@
+
+#tableContainer {
+    overflow: hidden;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+    .table {
+        width: 330px;
+        overflow: none;
+        height: 100%;
+    }
+
+    
+
+    #buttonCell {
+        width: 100px;
+    }
+
+    .cell {
+        
+        font-size: small;
+    }
+
+    .total {
+        font-size: 15px;
+        position: relative;
+        bottom: 40px;
+        left: 10px;
+    }
+
+
+    #tableContainer {
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .table {
+        overflow: hidden;
+        height: 500px;
+    }
+    
+
+
+}
+
+
