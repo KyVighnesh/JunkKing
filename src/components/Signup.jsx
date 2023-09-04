@@ -179,6 +179,7 @@ else if(user.name.length<4 || regexEmail.test(user.email) == false || regexPassw
       aria-describedby="basic-addon1"
       onChange={handleChange}
       name = "password"
+      type='password'
     />
   </InputGroup>
 <h6 style={{textAlign:"center"}}>{passwordError}</h6>
