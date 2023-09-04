@@ -169,7 +169,7 @@ const Products = () => {
       <Container>
       <div style={{display:'flex',width:"200px",justifyContent:"space-between",float:"left"}}>
         <Navbar.Brand className='headerText' href="#home">Your Orders</Navbar.Brand>
-        <Navbar.Brand className='headerText' href="#home" onClick = {checkOut}>View Cart</Navbar.Brand>
+        <Navbar.Brand className='headerText' href="#home" onClick = {checkOut}>Check Out</Navbar.Brand>
         </div>  
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
