@@ -124,6 +124,7 @@ else if(regexEmail.test(user.email) == false || regexPassword.test(user.password
 
       <InputGroup className="mb-3">
         <Form.Control
+        type='password'
           placeholder="Password"
           aria-label="Password"
           aria-describedby="basic-addon1"
