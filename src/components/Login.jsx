@@ -95,9 +95,16 @@ else if(regexEmail.test(user.email) == false || regexPassword.test(user.password
   return (
     <div id='main'>
 
+      
+
         <div id='inputData'>
 
-            <h4>Junk King</h4>
+         
+            
+          <img style = {{width:"30px"}}src='https://th.bing.com/th/id/OIP.yMd72XNbemK_40Mhwz-lfAHaHa?pid=ImgDet&rs=1'/><br/>
+          
+
+            <h4> Junk King</h4>
         <InputGroup className="mb-3">
         <Form.Control
           placeholder="Email"
