@@ -40,6 +40,11 @@ const Products = () => {
       })
     }
 
+    const onClickLogOut = () => {
+      localStorage.setItem("email","")
+      navigate('/')
+    }
+
 
     const fetchUser = () => {
         axios.post("https://junk-king.onrender.com/user",{email:localStorage.getItem("email")}).then(data=> {
@@ -168,14 +173,16 @@ const Products = () => {
         <Navbar className="bg-body-tertiary">
       <Container>
       <div style={{display:'flex',width:"200px",justifyContent:"space-between",float:"left"}}>
+      <img style = {{width:"40px",position:'relative',right:10}}src='https://th.bing.com/th/id/OIP.yMd72XNbemK_40Mhwz-lfAHaHa?pid=ImgDet&rs=1'/><br/>
         <Navbar.Brand className='headerText' href="#home">Your Orders</Navbar.Brand>
-        <Navbar.Brand className='headerText' href="#home" onClick = {checkOut}>Check Out</Navbar.Brand>
+        <Navbar.Brand className='headerText' href="#home" onClick = {checkOut}>View Cart</Navbar.Brand>
         </div>  
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text id='user'>
             Signed in as: <span style={{color:"black"}}>{currentUser}</span>
           </Navbar.Text>
+          <Navbar.Brand className='headerText' href="#home" style={{position:'relative',left:40}} onClick = {onClickLogOut}>Log Out</Navbar.Brand>
         </Navbar.Collapse>
       </Container>
     </Navbar>
