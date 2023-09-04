@@ -18,6 +18,10 @@ h2 {
     margin-top: 240px;
 }
 
+#burgers {
+    min-width: 100%;
+}
+
 
 
 @media only screen and (min-width:320px) and (max-width:600px) {
@@ -34,6 +38,7 @@ h2 {
     .categories {
 
         display: block;
+        width: 100%;
 
 
     }
@@ -41,21 +46,25 @@ h2 {
     
 
     .menuCard {
-        margin-top: 30px;
+        
+        margin: auto auto 30px;
+        
     }
 
 
 
     #burgers {
         height: 2450px;
-        width: 78%;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        
+        overflow: hidden;
     }
 
     .leftover {
         height: 2400px;
         margin-top: -0.5px;
-        width: 78%;
+        width: 100%;
         margin: auto;
 
     }
@@ -67,17 +76,7 @@ h2 {
 }
 
 
-@media only screen and (min-width:320px) and (max-width:600px) {
 
-    #burgers {
-        width: 50%;
-    }
-
-    .leftover {
-        width: 50%;
-
-    }
-}
 
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
@@ -105,11 +104,13 @@ h2 {
     #burgers {
 
         height: 1000px;
+        
 
     }
 
     .menuCard {
         margin-top: 30px;
+        
     }
 
     .leftover {
