@@ -158,6 +158,7 @@ else if(user.name.length<4 || regexEmail.test(user.email) == false || regexPassw
       onChange={handleChange}
       name = "name"
     />
+    {nameError}
   </InputGroup>
     <InputGroup className="mb-3">
     <Form.Control
@@ -167,7 +168,9 @@ else if(user.name.length<4 || regexEmail.test(user.email) == false || regexPassw
       onChange={handleChange}
       name = "email"
     />
+    
   </InputGroup>
+  {emailError}
 
   <InputGroup className="mb-3">
     <Form.Control
@@ -178,7 +181,7 @@ else if(user.name.length<4 || regexEmail.test(user.email) == false || regexPassw
       name = "password"
     />
   </InputGroup>
-
+<h6 style={{textAlign:"center"}}>{passwordError}</h6>
   <InputGroup className="mb-3">
     <Form.Control
       placeholder="Contact"
