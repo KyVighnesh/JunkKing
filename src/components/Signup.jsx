@@ -146,6 +146,7 @@ else if(user.name.length<4 || regexEmail.test(user.email) == false || regexPassw
     <div id='main'>
 
     <div id='inputData'>
+    <img style = {{width:"30px"}}src='https://th.bing.com/th/id/OIP.yMd72XNbemK_40Mhwz-lfAHaHa?pid=ImgDet&rs=1'/><br/>
 
         <h4>Junk King</h4>
 
