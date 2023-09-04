@@ -182,7 +182,7 @@ const Products = () => {
           <Navbar.Text id='user'>
             Signed in as: <span style={{color:"black"}}>{currentUser}</span>
           </Navbar.Text>
-          <Navbar.Brand className='headerText' href="#home" style={{position:'relative',left:40}} onClick = {onClickLogOut}>Log Out</Navbar.Brand>
+          <Navbar.Brand className='headerText'  id = "logOut"href="#home" style={{position:'relative',left:40}} onClick = {onClickLogOut}>Log Out</Navbar.Brand>
         </Navbar.Collapse>
       </Container>
     </Navbar>
