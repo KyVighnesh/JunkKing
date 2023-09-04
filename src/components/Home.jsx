@@ -32,7 +32,7 @@ const Home = () => {
         
 
     
-        <h2 style={{textAlign:"center",color:"white",fontWeight:"bolder",position:'relative',top:10}}>Junk King</h2>
+        <h2 style={{textAlign:"center",color:"white",fontWeight:"bolder",position:'relative',top:10}}><img style = {{width:"30px"}}src='https://th.bing.com/th/id/OIP.yMd72XNbemK_40Mhwz-lfAHaHa?pid=ImgDet&rs=1'/><br/>Junk King</h2>
         
         
 
