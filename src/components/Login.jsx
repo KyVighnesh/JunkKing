@@ -61,7 +61,8 @@ const onHandleClick = () => {
           }
         }
     }).catch(err=> {
-        console.log(err)
+        alert("Please Enter Correct Username or Password")
+        setUser({email:"",password:""})
     })
 
 
@@ -113,6 +114,7 @@ else if(regexEmail.test(user.email) == false || regexPassword.test(user.password
           aria-describedby="basic-addon1"
           onChange={handleChange}
           name = "email"
+          value = {user.email}
         
         />
         
@@ -130,6 +132,7 @@ else if(regexEmail.test(user.email) == false || regexPassword.test(user.password
           aria-describedby="basic-addon1"
           onChange={handleChange}
           name = "password"
+          value = {user.password}
         />
 
         <h5 style={{color:"black",marginTop:"20px"}}>{passwordError}</h5>
