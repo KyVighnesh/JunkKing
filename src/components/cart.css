@@ -1,13 +1,22 @@
 
 #tableContainer {
     overflow: hidden;
+    min-width: 100%;
+}
+
+.table {
+    overflow: hidden;
+}
+
+#simpleTable {
+    overflow: hidden;
 }
 
 
 @media only screen and (min-width:320px) and (max-width:600px) {
     .table {
-        width: 500pxpx;
-        overflow: none;
+        width: 100%;
+        overflow: hidden;
         height: 100%;
     }
 
@@ -31,14 +40,19 @@
 
 
     #tableContainer {
-        height: 600px;
         overflow: hidden;
         width: 100%;
+        height: 100%;
     }
 
     .table {
         overflow: hidden;
-        height: 500px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #simpleTable {
+        overflow: hidden;
     }
     
     
