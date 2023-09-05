@@ -180,9 +180,9 @@ const Cart = () => {
     
    
   return (
-    <div className='table'>
-      <TableContainer id = "tableContainer"component={Paper}>
-      <Table sx={{ Width: 650 }} aria-label="simple table">
+    <div className='table' style={{height:window.innerHeight}}>
+      <TableContainer id = "tableContainer" style={{height:window.innerHeight}}component={Paper}>
+      <Table id = "simpleTable" sx={{ minWidth: "100%" }} aria-label="simple table">
         <TableHead>
           <TableRow>
           <TableCell><h5 className='cell'>Orders</h5></TableCell>
@@ -199,9 +199,9 @@ const Cart = () => {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.name}
+                {row.dsc}
               </TableCell>
-              <TableCell id = "buttonCell" align="right"><Button variant="dark" id = "buttons" onClick={()=> {onClickAdd(row)}} style={{width:"30px",position:"relative",top:4,right:"15px"}}>+</Button>{row.quantity}<Button onClick = {()=> {onClickDecrease(row)}}variant="dark"style={{width:"30px",position:"relative",top:4,left:"15px"}}>-</Button> </TableCell>
+              <TableCell id = "buttonCell" align="right" style={{display:"flex",alignItems:"center",justifyContent:"right",width:"200"}}><Button variant="dark" id = "buttons" onClick={()=> {onClickAdd(row)}} style={{width:"30px",position:"relative",top:4,left:20}}>+</Button>{row.quantity}<Button id = "buttons" onClick = {()=> {onClickDecrease(row)}}variant="dark"style={{width:"30px",position:"relative",top:4,right:"20px",float:"right"}}>-</Button> </TableCell>
               <TableCell align="right">$ {row.price * row.quantity} </TableCell>
             </TableRow>
           ))}
