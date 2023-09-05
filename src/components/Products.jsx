@@ -173,7 +173,7 @@ const Products = () => {
         <Navbar className="bg-body-tertiary">
       <Container>
       <div style={{display:'flex',width:"200px",justifyContent:"space-between",float:"left"}}>
-      <img style = {{width:"40px",position:'relative',right:10}}src='https://th.bing.com/th/id/OIP.yMd72XNbemK_40Mhwz-lfAHaHa?pid=ImgDet&rs=1'/><br/>
+      <img style = {{width:"40px",position:'relative',right:10}}src='https://www.freeiconspng.com/uploads/hamburgers-icon-7.png'/><br/>
         <Navbar.Brand className='headerText' href="#home">Your Orders</Navbar.Brand>
         <Navbar.Brand className='headerText' href="#home" onClick = {checkOut}>View Cart</Navbar.Brand>
         </div>  
