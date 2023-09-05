@@ -226,7 +226,7 @@ const Products = () => {
     
 
     <div className='leftover'>
-        <h2 id='pizza'>
+        <h2 id='pizza' style={{width:window.innerWidth}}>
         Pizza <Badge bg="secondary"></Badge>
         </h2>
         <div className= 'categories'>
