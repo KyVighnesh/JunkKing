@@ -1,16 +1,23 @@
 #main {
     background-image: url("https://th.bing.com/th/id/OIP.KNjcn847lnwGFl_ay8_v8wHaNK?pid=ImgDet&rs=1");
-    height: 100vh;
+
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#input{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
 
 #inputData {
     background-color: orange;
-    height: 400px;
     width: 400px;
     border-radius: 20px;
     display: flex;
