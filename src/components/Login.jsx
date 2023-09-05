@@ -93,7 +93,7 @@ else if(regexEmail.test(user.email) == false || regexPassword.test(user.password
 }
 }
   return (
-    <div id='main'>
+    <div id='main' style={{height:window.innerHeight}}>
 
       
 
@@ -101,7 +101,7 @@ else if(regexEmail.test(user.email) == false || regexPassword.test(user.password
 
          
             
-          <img style = {{width:"30px"}}src='https://th.bing.com/th/id/OIP.yMd72XNbemK_40Mhwz-lfAHaHa?pid=ImgDet&rs=1'/><br/>
+          <img style = {{width:"30px"}}src='https://www.freeiconspng.com/uploads/hamburgers-icon-7.png'/><br/>
           
 
             <h4> Junk King</h4>
