@@ -1,5 +1,5 @@
 #main {
-    background-image: url("https://th.bing.com/th/id/OIP.KNjcn847lnwGFl_ay8_v8wHaNK?pid=ImgDet&rs=1");
+    background-image: linear-gradient(to right, #070707 20%, #605b5b);
 
     overflow: hidden;
     display: flex;
