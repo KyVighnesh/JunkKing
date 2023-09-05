@@ -6,12 +6,13 @@
 }
 
 body {
-    background-image: url("https://th.bing.com/th/id/OIP.KNjcn847lnwGFl_ay8_v8wHaNK?pid=ImgDet&rs=1");
+    background-image: linear-gradient(to right, #070707 20%, #605b5b);
 
 }
 
 h2 {
-    color: white;
+    color: rgb(250, 247, 247);
+    
 }
 
 .leftover {
@@ -69,10 +70,13 @@ h2 {
     .leftover {
         height: 2400px;
         margin-top: -0.5px;
-        width: 100%;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
 
     }
+
+
+    
 
     #bodyDiv {
         overflow: hidden;
@@ -94,10 +98,6 @@ h2 {
     }
     
 
-    #pizza {
-        position: relative;
-        top: 20px;
-    }
 
     .categories {
 
@@ -128,6 +128,7 @@ h2 {
         height: 4000px;
     }
 
+
     
 }
 
@@ -143,4 +144,16 @@ h2 {
         justify-content: space-between;
     }
 
+    
+
 }
+
+@media only screen and (min-width:1024px){
+h2 {
+    position: relative;
+    left: 23px;
+    bottom: 20px;
+}
+}
+
+
