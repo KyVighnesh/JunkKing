@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
+
 const Home = () => {
 
   const navigate = useNavigate()
@@ -23,20 +24,21 @@ const Home = () => {
         
 
 
-      <div id = "homeDiv"style={{ backgroundImage: "url(" + "https://images.pexels.com/photos/5490999/pexels-photo-5490999.jpeg?auto=compress&cs=tinysrgb&w=600" + ")",
+      <div id = "homeDiv" style={{ backgroundImage: "url(" + "https://png.pngtree.com/back_origin_pic/03/89/87/ac7df65bc8adc85eaebe85c361338718.jpg" + ")",
     backgroundPosition: 'full',
-    backgroundSize: 'cover',
+    backgroundSize:"cover",
     overflow:"hidden",
-    height: "705px"}}>
+    height: window.innerHeight
+    }}>
 
         
 
     
-        <h2 style={{textAlign:"center",color:"white",fontWeight:"bolder",position:'relative',top:10}}><img style = {{width:"30px"}}src='https://th.bing.com/th/id/OIP.yMd72XNbemK_40Mhwz-lfAHaHa?pid=ImgDet&rs=1'/><br/>Junk King</h2>
+        <h2 style={{textAlign:"center",color:"white",fontWeight:"bolder",position:'relative',top:80}}><img style = {{width:"60px"}}src='https://www.freeiconspng.com/uploads/hamburgers-icon-7.png'/><br/>Junk King</h2>
         
         
 
-        <div style={{position:"relative",top:200,left:50}}>
+        <div id = "textDiv"style={{position:"relative",top:200,left:30}}>
         <h3 style={{color:"white",fontWeight:'bolder'}}>
         LIP-SMACKING BURGERS
 
